@@ -1,0 +1,74 @@
+// لبدء المشروع مع قت
+git init
+
+// لإضافة كل الملفات 
+git add .
+
+// بعد الاضافة يجب كتابة الارتباط مع شرح
+git commit -m "your message"
+
+//لمعرفة اسم المستخدم
+git config --global user.name
+
+//لتغيير اسم المستخدم
+git config --global user.name "New user Name"
+
+//لتغيير بريد المستخدم 
+git config --global user.email "your@email.com"
+
+// لمعرفة حالة ملفات المشروع
+git status
+
+//لمعرفة البرانش
+git branch
+
+//لتغيير اسم البرانش
+git branch -m new_name
+
+//لانشاء برانش جديد
+git checkout -b New_branch_name
+
+// للانتقال من برانش إلى آخر
+ git checkout branch_name
+
+// لدمج برانش مع الرئيسي - يجب الانتقال الى البرانش الرئيسي ثم تنفيذ الأمر
+git branch merge Other_branch_name
+
+//عند دمج اكثر من برانش مع وجود ملف تم تغييره في البرانشين سيطلب من المحرر اعتماد احد ا لتغييرين
+
+// لإزالة ملف من البرانش
+git rm file_namt.extension
+
+//لاستعادة المحذوفات
+git reset --hard HEAD~1
+
+//لحذف برانش يجب الخروج من البرانش المراد حذفه ثم تنفيذ سطر الأمر
+git branch -D branch_Name
+
+//لإزالة تعديلات على الملف غير مرغوب فيها 
+git checkout -- .
+//السطر أعلاه يعمل ما لم يتم اضافة كوميت
+// this line up work with un stage changes
+
+
+// للاتصال بالقت هاب
+git remote add origin https://github.com/hsnww/bootstrapLPS.git
+//مع الاخذ في الاعتبار تغير رابط المخزن حسب المستخدم واسم المخزن
+
+// لنشر المحتوى على قت هاب 
+git push origin section01
+// حيث اسم البرانش المراد نشره section01
+
+
+// لنسخ محتوى مشروع من قت هاب
+git clone https://github.com/hsnww/bootstrapLPS.git .
+// حيث رابط المشروع هو الظاهر اعلاه
+
+
+
+// لجلب الملفات الجديدة من المشروع في حال وجود اكثر من مطور مشارك فيه
+git pull
+
+
+
+
